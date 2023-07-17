@@ -28,3 +28,39 @@ npm install
 ```
 
 ## Running the API
+
+1. Start your MongoDB server. If you're using the default configuration, simply run:
+```bash
+mongod
+```
+2. Start the API server:
+```bash
+npm start
+```
+3. The API will start running at http://localhost:3000.
+
+## API Documentation (Swagger)
+You can access the API documentation using Swagger UI. Open your web browser and visit:
+
+```bash
+http://localhost:3000/api-docs
+```
+
+## Running Unit Tests
+To run the unit tests, use the following command:
+
+```bash
+npm test
+```
+
+## API Endpoints
+The API provides the following endpoints:
+
+1. POST /users/register: User registration (Create a new user).
+2. POST /users/login: User login (Get JWT token).
+
+1. POST /tasks: Create a new task (Authentication required).
+2. GET /tasks: Retrieve all tasks (Authentication required).
+3. GET /tasks/:id: Retrieve a specific task by ID (Authentication required).
+4. PATCH /tasks/:id: Update a task (Authentication required).
+5. DELETE /tasks/:id: Delete a task (Authentication required).
